@@ -1,0 +1,35 @@
+num1=int(input())
+set1=input()
+
+num2=int(input())
+set2=input()
+
+set1=set1.split()
+set2=set2.split()
+
+l1=[]
+l2=[]
+
+for i in set1:
+    inte=int(i)
+    l1.append(inte)
+set1=l1    
+set1=set(set1)
+
+for i in set2:
+    inte=int(i)
+    l2.append(inte)
+set2=l2
+set2=set(set2)
+
+
+
+
+set1.symmetric_difference_update(set2)
+
+
+set1=list(set1)
+set1.sort()
+
+for i in set1:
+    print(i)
