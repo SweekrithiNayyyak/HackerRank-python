@@ -1,3 +1,5 @@
+#Happiness problem not completed
+
 happiness=0
 length=input().split()
 
