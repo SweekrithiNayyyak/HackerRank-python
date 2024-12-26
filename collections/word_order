@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+words=[]
+for i in range(int(input())):
+    words.append(input())
+
+dictionary={}
+
+for i in words:
+    if i not in dictionary:
+        dictionary[i]=1
+    else:
+        dictionary[i]+=1
+print(len(dictionary))
+for k in dictionary.values():
+    print(k,end=" ")
+print()
+        
+    
